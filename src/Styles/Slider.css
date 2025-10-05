@@ -1,0 +1,48 @@
+.slider {
+	max-width: 700px;
+	max-height: 400px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	display: flex;
+	box-sizing: border-box;
+	gap: 10px;
+	height: 100%;
+	scroll-snap-type: x mandatory;
+	border-radius: 12px;
+}
+
+.button-slider {
+	width: 20px;
+	height: 70px;
+	border-radius: 50px;
+	border: none;
+	position: absolute;
+	transition: background-color 0.3s ease, transform 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+.button-slider:active {
+	transform: scale(0.95);
+}
+
+@media (hover: hover) {
+	.button-slider:hover {
+		background-color: rgb(250, 241, 241);
+		transform: scale(1.1);
+	}
+}
+
+#slider-btn-prev {
+	top: calc(50% - 35px);
+	left: 6px;
+}
+
+#slider-btn-next {
+	top: calc(50% - 35px);
+	right: 6px;
+}
+
+.button-slider:hover {
+	cursor: pointer;
+}

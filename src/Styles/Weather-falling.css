@@ -1,0 +1,57 @@
+.modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 99998;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	overflow-y: auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.4s, visibility 0.4s;
+}
+
+.modal__box {
+	max-width: 500px;
+	padding: 30px;
+	background-color: white;
+	z-index: 1;
+	margin: 30px 15px;
+	box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+	transform: scale(0);
+	transition: transform 0.8s;
+	border-radius: 45px;
+}
+
+.modal.open {
+	visibility: visible;
+	opacity: 1;
+}
+
+.modal.open .modal__box {
+	transform: scale(1);
+}
+
+.modal__actions {
+	display: flex;
+	justify-content: space-around;
+	height: 45px;
+}
+
+.button--primary {
+	background-color: rgb(5, 182, 5);
+}
+
+.button--reject {
+	background-color: rgb(221, 44, 44);
+}
+
+.modal__header {
+	display: flex;
+	justify-content: center;
+	color: rgba(55, 97, 232, 0.8);
+}

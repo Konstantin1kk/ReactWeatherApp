@@ -1,0 +1,53 @@
+.today__date {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #510087;
+	height: 100%;
+	max-height: 50px;
+	font-size: 23px;
+	text-align: center;
+}
+
+.today__info {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.today__precipitation {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 10px 0px;
+}
+
+.today__precipitation--textmod {
+	display: flex;
+	align-items: center;
+	font-size: 19px;
+}
+
+.info-box-today {
+	margin: 30px 0px;
+	max-width: 50%;
+}
+
+.info-box-today-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+	height: 100%;
+	max-height: 150px;
+}
+
+.cart__info-box-wrapper--mod {
+	margin: 20px 0px;
+}
+
+@media (max-width: 420px) {
+	.today__date {
+		font-size: 1.1em;
+	}
+}
